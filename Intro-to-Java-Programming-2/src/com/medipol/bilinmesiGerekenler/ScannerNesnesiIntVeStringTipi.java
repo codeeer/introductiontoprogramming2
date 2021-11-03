@@ -16,12 +16,16 @@ public class ScannerNesnesiIntVeStringTipi {
 
 		giris.nextLine();// Bunun nedeni, nextInt() yürütmesini bitirdikten sonra, nextLine() yöntemi
 							// çağrıldığında, nextInt()'den sonra mevcut olan yeni satır karakterini tarar.
-							// Bunu aşağıdaki yollardan biriyle yapabilirsiniz:
 		// Eklemeniz gereken yukaridaki satır (\n karakterini tüketir)
 		System.out.println("Lütfen adinizi giriniz : ");
 		String ad = giris.nextLine();
+		
+		System.out.println("Lutfen 3 tamsayi giriniz : ");
+		int z = giris.nextInt();
+		
+		int toplam = n + m+z;
 
-		System.out.print("Toplami yapan kisinin adi: " + ad + " sonucu: " + n + m);
+		System.out.print("Toplami yapan kisinin adi: " + ad + " sonucu: " +toplam);
 	}
 
 }
